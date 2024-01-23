@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  indexcarddigitisation:
+    image: indexcarddigitisation
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./app:/app
+    command: ["tail", "-f", "/dev/null"]
