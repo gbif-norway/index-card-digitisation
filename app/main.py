@@ -1,5 +1,5 @@
 #%%
-from lib.split_pdf import split_pdf_to_images
+from helpers.split_pdf import split_pdf_to_images
 from pathlib import Path
 # %%
 wdir = Path('/app')
